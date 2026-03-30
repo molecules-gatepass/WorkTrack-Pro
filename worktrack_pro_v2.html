@@ -319,7 +319,7 @@ tbody tr:hover td{background:var(--paper);}
 //  STATIC DATA
 // ══════════════════════════════════════════════════
 const DEPTS = [
-  {id:'gatepass',name:'Gatepass',color:'#D9502A',bg:'#FDF0EC'},
+  {id:'sales',name:'Sales',color:'#D9502A',bg:'#FDF0EC'},
   {id:'ops',name:'Operations',color:'#1A9E5E',bg:'#E6F4ED'},
   {id:'hr',name:'Human Resources',color:'#BF2A6A',bg:'#FAEAF2'},
   {id:'tech',name:'Technology',color:'#1A3A6C',bg:'#E8EDF9'},
@@ -330,33 +330,33 @@ const DEPTS = [
 ];
 
 const USERS = [
-  {id:'a1',name:'Sujit Kumar Roy',role:'admin',dept:null,ava:'SKR',color:'#3DBA72'},
-  {id:'h1',name:'Jeewan Bayra',role:'head',dept:'gatepass',ava:'JB',color:'#D9502A'},
-  //{id:'h2',name:'Suresh Menon',role:'head',dept:'ops',ava:'SM',color:'#1A9E5E'},
-  //{id:'h3',name:'Kavita Iyer',role:'head',dept:'hr',ava:'KI',color:'#BF2A6A'},
-  //{id:'h4',name:'Amit Sharma',role:'head',dept:'tech',ava:'AS',color:'#1A3A6C'},
-  //{id:'h5',name:'Rekha Joshi',role:'head',dept:'finance',ava:'RJ',color:'#8A5A10'},
-  //{id:'h6',name:'Vikram Nair',role:'head',dept:'marketing',ava:'VN',color:'#4A1A7A'},
-  //{id:'h7',name:'Divya Pillai',role:'head',dept:'support',ava:'DP',color:'#0F5458'},
-  //{id:'h8',name:'Kiran Desai',role:'head',dept:'logistics',ava:'KD',color:'#7A3010'},
-  {id:'m1',name:'Manjit Kharwar',role:'member',dept:'gatepass',ava:'MK',color:'#E8693E'},
-  {id:'m2',name:'Kusum Ghosal',role:'member',dept:'gatepass',ava:'KG',color:'#C44020'},
-  //{id:'m3',name:'Tarun Das',role:'member',dept:'sales',ava:'TD',color:'#A03010'},
-  //{id:'m4',name:'Nisha Gupta',role:'member',dept:'ops',ava:'NG',color:'#22A865'},
-  //{id:'m5',name:'Rajan Bose',role:'member',dept:'ops',ava:'RB',color:'#157A40'},
-  //{id:'m6',name:'Pooja Shetty',role:'member',dept:'ops',ava:'PS',color:'#0E5530'},
-  //{id:'m7',name:'Ananya Verma',role:'member',dept:'hr',ava:'AV',color:'#D03A7A'},
-  //{id:'m8',name:'Dev Patel',role:'member',dept:'hr',ava:'DP2',color:'#A02060'},
-  //{id:'m9',name:'Sonal Tiwari',role:'member',dept:'tech',ava:'ST',color:'#2A5AAE'},
-  //{id:'m10',name:'Rahul Mishra',role:'member',dept:'tech',ava:'RM',color:'#1A3A7A'},
-  //{id:'m11',name:'Lalita Shah',role:'member',dept:'finance',ava:'LS',color:'#A07020'},
-  //{id:'m12',name:'Girish Rao',role:'member',dept:'finance',ava:'GR',color:'#7A5010'},
-  //{id:'m13',name:'Maya Chopra',role:'member',dept:'marketing',ava:'MC',color:'#5A2A8A'},
-  //{id:'m14',name:'Rohan Kulkarni',role:'member',dept:'marketing',ava:'RK',color:'#3A1A6A'},
-  //{id:'m15',name:'Meena Joseph',role:'member',dept:'support',ava:'MJ',color:'#146A6A'},
-  //{id:'m16',name:'Arun Krishnan',role:'member',dept:'support',ava:'AK',color:'#0D4A4A'},
-  //{id:'m17',name:'Deepak Pandey',role:'member',dept:'logistics',ava:'DP3',color:'#8A3A18'},
-  //{id:'m18',name:'Fatima Khan',role:'member',dept:'logistics',ava:'FK',color:'#5A2010'},
+  {id:'a1',name:'Ramesh Oberoi',role:'admin',dept:null,ava:'RO',color:'#3DBA72'},
+  {id:'h1',name:'Priya Kapoor',role:'head',dept:'sales',ava:'PK',color:'#D9502A'},
+  {id:'h2',name:'Suresh Menon',role:'head',dept:'ops',ava:'SM',color:'#1A9E5E'},
+  {id:'h3',name:'Kavita Iyer',role:'head',dept:'hr',ava:'KI',color:'#BF2A6A'},
+  {id:'h4',name:'Amit Sharma',role:'head',dept:'tech',ava:'AS',color:'#1A3A6C'},
+  {id:'h5',name:'Rekha Joshi',role:'head',dept:'finance',ava:'RJ',color:'#8A5A10'},
+  {id:'h6',name:'Vikram Nair',role:'head',dept:'marketing',ava:'VN',color:'#4A1A7A'},
+  {id:'h7',name:'Divya Pillai',role:'head',dept:'support',ava:'DP',color:'#0F5458'},
+  {id:'h8',name:'Kiran Desai',role:'head',dept:'logistics',ava:'KD',color:'#7A3010'},
+  {id:'m1',name:'Aryan Mehta',role:'member',dept:'sales',ava:'AM',color:'#E8693E'},
+  {id:'m2',name:'Sneha Rao',role:'member',dept:'sales',ava:'SR',color:'#C44020'},
+  {id:'m3',name:'Tarun Das',role:'member',dept:'sales',ava:'TD',color:'#A03010'},
+  {id:'m4',name:'Nisha Gupta',role:'member',dept:'ops',ava:'NG',color:'#22A865'},
+  {id:'m5',name:'Rajan Bose',role:'member',dept:'ops',ava:'RB',color:'#157A40'},
+  {id:'m6',name:'Pooja Shetty',role:'member',dept:'ops',ava:'PS',color:'#0E5530'},
+  {id:'m7',name:'Ananya Verma',role:'member',dept:'hr',ava:'AV',color:'#D03A7A'},
+  {id:'m8',name:'Dev Patel',role:'member',dept:'hr',ava:'DP2',color:'#A02060'},
+  {id:'m9',name:'Sonal Tiwari',role:'member',dept:'tech',ava:'ST',color:'#2A5AAE'},
+  {id:'m10',name:'Rahul Mishra',role:'member',dept:'tech',ava:'RM',color:'#1A3A7A'},
+  {id:'m11',name:'Lalita Shah',role:'member',dept:'finance',ava:'LS',color:'#A07020'},
+  {id:'m12',name:'Girish Rao',role:'member',dept:'finance',ava:'GR',color:'#7A5010'},
+  {id:'m13',name:'Maya Chopra',role:'member',dept:'marketing',ava:'MC',color:'#5A2A8A'},
+  {id:'m14',name:'Rohan Kulkarni',role:'member',dept:'marketing',ava:'RK',color:'#3A1A6A'},
+  {id:'m15',name:'Meena Joseph',role:'member',dept:'support',ava:'MJ',color:'#146A6A'},
+  {id:'m16',name:'Arun Krishnan',role:'member',dept:'support',ava:'AK',color:'#0D4A4A'},
+  {id:'m17',name:'Deepak Pandey',role:'member',dept:'logistics',ava:'DP3',color:'#8A3A18'},
+  {id:'m18',name:'Fatima Khan',role:'member',dept:'logistics',ava:'FK',color:'#5A2010'},
 ];
 
 function today(){return new Date().toISOString().split('T')[0];}
@@ -413,63 +413,30 @@ function addSyncLog(type, msg){
 // ══════════════════════════════════════════════════
 //  SEED DATA (only used if no storage found)
 // ══════════════════════════════════════════════════
-function seedTasks(){
-  return [
-    // --- TODAY ---
-   /*{id:1,memberId:'m1',title:'Follow up with 5 enterprise leads',desc:'Call leads from CRM shortlist',priority:'High',status:'Done',date:today(),due:today(),eodNote:'Completed 5/5 calls. 2 interested in demo.',hindrance:'',progress:100},
-    {id:2,memberId:'m2',title:'Send Q2 pricing proposals to 8 clients',desc:'Use updated pricing sheet',priority:'High',status:'Done',date:today(),due:today(),eodNote:'All 8 sent with personalised cover notes.',hindrance:'',progress:100},
-    {id:3,memberId:'m3',title:'Prepare pipeline report for board',desc:'Compile CRM data and create slide deck',priority:'High',status:'In Progress',date:today(),due:today(),eodNote:'60% done, slides being drafted',hindrance:'CRM export is slow',progress:60},
-    {id:4,memberId:'m4',title:'Reconcile May vendor payment records',desc:'Match all invoices against bank statements',priority:'High',status:'Done',date:today(),due:today(),eodNote:'All 47 invoices reconciled',hindrance:'',progress:100},
-    {id:5,memberId:'m5',title:'Physical inventory count — Category A',desc:'Count items in aisles A1–A20',priority:'Medium',status:'Blocked',date:today(),due:today(),eodNote:'Cannot proceed — forklift unavailable',hindrance:'Forklift maintenance',progress:20},
-    {id:6,memberId:'m6',title:'Coordinate 3 inter-city dispatches',desc:'Ensure logistics partners confirm pickup times',priority:'High',status:'Done',date:today(),due:today(),eodNote:'All 3 dispatched on time',hindrance:'',progress:100},
-    {id:7,memberId:'m7',title:'Process 8 new joiner onboarding docs',desc:'Collect and verify documents for May batch',priority:'High',status:'Done',date:today(),due:today(),eodNote:'All 8 processed and filed',hindrance:'',progress:100},
-    {id:8,memberId:'m8',title:'Schedule appraisal interviews — Ops',desc:'Book 6 appraisal slots',priority:'Medium',status:'In Progress',date:today(),due:today(),eodNote:'4/6 scheduled, 2 members unresponsive',hindrance:'2 members unreachable',progress:65},
-    {id:9,memberId:'m9',title:'Deploy hotfix — login timeout bug',desc:'Fix session expiry issue on production',priority:'High',status:'Done',date:today(),due:today(),eodNote:'Deployed 3pm, monitoring stable',hindrance:'',progress:100},
-    {id:10,memberId:'m10',title:'Write test cases — payment module',desc:'Unit + integration tests for payment gateway',priority:'Medium',status:'In Progress',date:today(),due:today(),eodNote:'Unit tests done, integration WIP',hindrance:'',progress:70},
-    {id:11,memberId:'m11',title:'Prepare May expense reimbursements',desc:'Verify receipts and process 22 reimbursements',priority:'High',status:'Done',date:today(),due:today(),eodNote:'All 22 processed and approved',hindrance:'',progress:100},
-    {id:12,memberId:'m12',title:'Quarterly GST filing preparation',desc:'Compile input/output data for Q1 GST return',priority:'High',status:'In Progress',date:today(),due:today(),eodNote:'75% complete, checking pending bills',hindrance:'3 invoices missing',progress:75},
-    {id:13,memberId:'m13',title:'Post 3 social media campaigns',desc:'Schedule posts across LinkedIn, Instagram, Twitter',priority:'High',status:'Done',date:today(),due:today(),eodNote:'All 3 scheduled, analytics tracking set up',hindrance:'',progress:100},
-    {id:14,memberId:'m14',title:'Write May newsletter content',desc:'800-word newsletter with product updates',priority:'Medium',status:'In Progress',date:today(),due:today(),eodNote:'Draft 80% done, needs proofreading',hindrance:'',progress:80},
-    {id:15,memberId:'m15',title:'Resolve 15 pending customer tickets',desc:'Priority tickets open >24hrs',priority:'High',status:'Done',date:today(),due:today(),eodNote:'13/15 resolved, 2 escalated to Tech',hindrance:'',progress:87},
-    {id:16,memberId:'m16',title:'Update FAQ knowledge base',desc:'Add answers for top 20 recurring queries',priority:'Medium',status:'Done',date:today(),due:today(),eodNote:'20 FAQs added and reviewed',hindrance:'',progress:100},
-    {id:17,memberId:'m17',title:'Track 12 outbound shipments',desc:'Confirm delivery status with 4 courier partners',priority:'High',status:'Done',date:today(),due:today(),eodNote:'11/12 delivered, 1 delayed by 1 day',hindrance:'',progress:92},
-    {id:18,memberId:'m18',title:'Negotiate rate card with DHL',desc:'Annual rate renegotiation meeting',priority:'Medium',status:'In Progress',date:today(),due:today(),eodNote:'Meeting done, awaiting revised proposal',hindrance:'',progress:50},
-    // --- HISTORICAL (past 3 months for appraisal) ---
-    {id:100,memberId:'m1',title:'Q1 client renewals outreach',desc:'Call 12 renewal accounts',priority:'High',status:'Done',date:daysAgo(3),due:daysAgo(3),eodNote:'10/12 renewed, 2 need follow-up',hindrance:'',progress:100},
-    {id:101,memberId:'m1',title:'CRM data cleanup',desc:'Remove duplicates, update contact info',priority:'Medium',status:'Done',date:daysAgo(5),due:daysAgo(5),eodNote:'Cleaned 340 records',hindrance:'',progress:100},
-    {id:102,memberId:'m1',title:'Sales strategy deck for Q2',desc:'Prepare slides for quarterly planning',priority:'High',status:'Done',date:daysAgo(7),due:daysAgo(7),eodNote:'Deck finalised and presented',hindrance:'',progress:100},
-    {id:103,memberId:'m1',title:'Demo presentation for Infosys lead',desc:'Customise product demo for enterprise pitch',priority:'High',status:'Done',date:daysAgo(10),due:daysAgo(10),eodNote:'Demo successful, proposal stage',hindrance:'',progress:100},
-    {id:104,memberId:'m1',title:'Attend regional sales conference',desc:'Network and gather competitor intelligence',priority:'Medium',status:'Done',date:daysAgo(14),due:daysAgo(14),eodNote:'3 warm leads from event',hindrance:'',progress:100},
-    {id:105,memberId:'m1',title:'Partner channel briefing',desc:'Brief 5 channel partners on new products',priority:'Medium',status:'Done',date:daysAgo(18),due:daysAgo(18),eodNote:'All 5 briefed, materials shared',hindrance:'',progress:100},
-    {id:106,memberId:'m1',title:'Monthly MIS report — Sales',desc:'Compile sales performance data for April',priority:'High',status:'Done',date:daysAgo(22),due:daysAgo(22),eodNote:'Report submitted to management',hindrance:'',progress:100},
-    {id:107,memberId:'m1',title:'Contract negotiation — Reliance account',desc:'Negotiate SLA terms for renewal',priority:'High',status:'Blocked',date:daysAgo(25),due:daysAgo(25),eodNote:'Legal review pending',hindrance:'Legal team unavailable',progress:40},
-    {id:108,memberId:'m2',title:'Onboard 3 new enterprise clients',desc:'Setup accounts, handholding sessions',priority:'High',status:'Done',date:daysAgo(4),due:daysAgo(4),eodNote:'All 3 onboarded smoothly',hindrance:'',progress:100},
-    {id:109,memberId:'m2',title:'Prepare Q2 pricing proposals',desc:'Customise proposals for 6 clients',priority:'High',status:'Done',date:daysAgo(8),due:daysAgo(8),eodNote:'All proposals sent and acknowledged',hindrance:'',progress:100},
-    {id:110,memberId:'m2',title:'Follow up — 10 cold leads',desc:'Outreach via email and LinkedIn',priority:'Medium',status:'Done',date:daysAgo(12),due:daysAgo(12),eodNote:'4 responded positively',hindrance:'',progress:100},
-    {id:111,memberId:'m2',title:'Product demo for mid-market segment',desc:'Tailored demo for 3 prospects',priority:'High',status:'Done',date:daysAgo(16),due:daysAgo(16),eodNote:'2 demos done, 1 rescheduled',hindrance:'',progress:75},
-    {id:112,memberId:'m3',title:'Pipeline analysis report',desc:'Identify stalled deals and action plan',priority:'High',status:'In Progress',date:daysAgo(6),due:daysAgo(6),eodNote:'Draft in review',hindrance:'Data access issues',progress:70},
-    {id:113,memberId:'m3',title:'New client prospecting — IT sector',desc:'Identify 20 IT companies to target',priority:'Medium',status:'Done',date:daysAgo(11),due:daysAgo(11),eodNote:'List prepared and shared with team',hindrance:'',progress:100},
-    {id:114,memberId:'m4',title:'Vendor payment audit — Q1',desc:'Review all vendor payments for discrepancies',priority:'High',status:'Done',date:daysAgo(5),due:daysAgo(5),eodNote:'Audit complete, no discrepancies',hindrance:'',progress:100},
-    {id:115,memberId:'m4',title:'Process SLA compliance report',desc:'Monthly compliance check for 3 vendors',priority:'Medium',status:'Done',date:daysAgo(9),due:daysAgo(9),eodNote:'All vendors within SLA',hindrance:'',progress:100},
-    {id:116,memberId:'m9',title:'Migrate legacy auth service',desc:'Move auth to new microservice architecture',priority:'High',status:'Done',date:daysAgo(7),due:daysAgo(7),eodNote:'Migration complete, tested in staging',hindrance:'',progress:100},
-    {id:117,memberId:'m9',title:'API rate limiting implementation',desc:'Add rate limits to public endpoints',priority:'High',status:'Done',date:daysAgo(12),due:daysAgo(12),eodNote:'Deployed to production',hindrance:'',progress:100},
-    {id:118,memberId:'m9',title:'Code review — payment module PRs',desc:'Review 8 open pull requests',priority:'Medium',status:'Done',date:daysAgo(15),due:daysAgo(15),eodNote:'All reviewed, 2 sent back for revision',hindrance:'',progress:100},
-    {id:119,memberId:'m9',title:'Incident post-mortem — DB outage',desc:'Document root cause and action items',priority:'High',status:'Done',date:daysAgo(20),due:daysAgo(20),eodNote:'Post-mortem shared with CTO',hindrance:'',progress:100},
-    {id:120,memberId:'m10',title:'Build payment reconciliation module',desc:'Auto-reconcile gateway vs internal records',priority:'High',status:'In Progress',date:daysAgo(6),due:daysAgo(3),eodNote:'Core logic done, UI pending',hindrance:'Design mockups delayed',progress:65},
-    {id:121,memberId:'m11',title:'Tax filing — advance tax Q1',desc:'Calculate and file advance tax',priority:'High',status:'Done',date:daysAgo(8),due:daysAgo(8),eodNote:'Filed on time',hindrance:'',progress:100},
-    {id:122,memberId:'m11',title:'Budget vs actual — April',desc:'Variance analysis for April spend',priority:'Medium',status:'Done',date:daysAgo(12),due:daysAgo(12),eodNote:'Report sent to CFO',hindrance:'',progress:100},
-    {id:123,memberId:'m13',title:'Product launch campaign — Phase 1',desc:'Plan and execute pre-launch content',priority:'High',status:'Done',date:daysAgo(9),due:daysAgo(9),eodNote:'3 articles, 8 posts scheduled',hindrance:'',progress:100},
-    {id:124,memberId:'m13',title:'Influencer outreach — 10 contacts',desc:'Pitch collaboration to micro-influencers',priority:'Medium',status:'Done',date:daysAgo(14),due:daysAgo(14),eodNote:'6 agreed to collab',hindrance:'',progress:100},
-    {id:125,memberId:'m15',title:'Customer satisfaction survey — Q1',desc:'Send and analyse 100-customer survey',priority:'Medium',status:'Done',date:daysAgo(10),due:daysAgo(10),eodNote:'78% satisfaction rate',hindrance:'',progress:100},
-    {id:126,memberId:'m15',title:'Escalation handling — 5 critical tickets',desc:'Resolve high-priority escalations',priority:'High',status:'Done',date:daysAgo(7),due:daysAgo(7),eodNote:'4 resolved, 1 escalated to product team',hindrance:'',progress:95},
-    
-  {id:127,memberId:'m17',title:'Fleet maintenance scheduling',desc:'Book service for 8 company vehicles',priority:'Medium',status:'Done',date:daysAgo(11),due:daysAgo(11),eodNote:'All 8 scheduled',hindrance:'',progress:100},
-    {id:128,memberId:'m17',title:'Courier partner evaluation',desc:'Review performance of 4 logistics partners',priority:'High',status:'Done',date:daysAgo(16),due:daysAgo(16),eodNote:'Report submitted, 1 partner flagged',hindrance:'',progress:100},
-  */];
+// ── Purge any old seed data that may have been stored in localStorage
+// from a previous version of this file. We identify seed tasks by their
+// hardcoded IDs (1–18 and 100–128). Real tasks assigned by admins/heads
+// will have IDs starting from 1000 onwards (set by nextId below).
+function purgeSeedData(){
+  const SEED_IDS = new Set([
+    1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,
+    100,101,102,103,104,105,106,107,108,109,110,111,112,113,
+    114,115,116,117,118,119,120,121,122,123,124,125,126,127,128
+  ]);
+  try{
+    const raw = localStorage.getItem(STORAGE_KEY);
+    if(!raw) return;
+    const stored = JSON.parse(raw);
+    const cleaned = stored.filter(t => !SEED_IDS.has(t.id));
+    if(cleaned.length !== stored.length){
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(cleaned));
+    }
+  }catch(e){}
 }
+purgeSeedData();
 
-let tasks = loadTasks() || seedTasks();
-let nextId = tasks.reduce((mx,t)=>Math.max(mx,t.id),0)+1;
+let tasks = loadTasks() || [];
+let nextId = Math.max(1000, tasks.reduce((mx,t)=>Math.max(mx,t.id),0)+1);
 let settings = loadSettings();
 let currentUser = null;
 let currentPage = 'dashboard';
